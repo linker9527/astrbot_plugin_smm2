@@ -1,0 +1,30 @@
+name: astrbot_plugin_smm2
+display_name: 马造2查询
+author: linker9527
+author_url: https://github.com/linker9527
+description: 超级马力欧制造2关卡/玩家查询、随机抽图、bcd下载、关卡高清渲染。
+short_desc: 马造2关卡查询、随机抽图、bcd下载、关卡渲染
+version: 1.1.1
+repo: https://github.com/linker9527/astrbot_plugin_smm2
+category: 娱乐
+tags:
+  - 游戏
+  - 马造2
+  - 马力欧
+help: |
+  马造2关卡/玩家查询 - 超级马力欧制造2 数据工具
+
+  命令:
+  /smm2 <关卡或玩家ID> - 查询关卡信息（含缩略图）或玩家信息
+  /rest 0-4 - 随机抽取关卡 bcd 文件（0完全随机/1简单/2普通/3困难/4极难）
+  /bcd <关卡ID> - 下载指定关卡 bcd 文件
+  /render <关卡ID> - 渲染关卡高清图片（地表+里世界）
+
+  说明:
+  ID 支持带横杠(XXX-XXX-XXX)或9位纯字符，不区分大小写
+  /smm2 优先识别为关卡，找不到时自动切换查玩家
+  支持 LLM 自然语言调用：直接说"查一下xxx"即可查询
+  支持图片识别：发送 Switch 截图自动识别关卡ID并渲染
+  OCR 纠错：SMM2 ID 不含 I/O/Z，自动纠正（O→0、I→L/1/7）
+  /render 需要 toost 渲染器，将 toost 目录放到插件目录下
+  toost 下载: https://github.com/TheGreatRambler/toost/releases
