@@ -209,7 +209,7 @@ def _send_text(event, text):
     "astrbot_plugin_smm2",
     "linker9527",
     "超级马力欧制造2关卡/玩家查询、随机抽图、bcd下载、关卡渲染",
-    "1.1.0",
+    "1.1.1",
     "https://github.com/linker9527/astrbot_plugin_smm2",
 )
 class Smm2Plugin(Star):
